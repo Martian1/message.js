@@ -1,0 +1,65 @@
+div.my-message {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+div.my-message .my-message-cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+div.my-message .my-message__group{
+    margin: 0;
+    background: #fff url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…c5IFoiIGlkPSJTaGFwZSI+PC9wYXRoPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+) no-repeat 17px center;
+    top: 50%;
+    border-radius: 6px;
+    padding: 0 40px 0 52px;
+    z-index: 1002;
+    height: 60px;
+    overflow: hidden;
+    line-height: 60px;
+    position: fixed;
+    min-width: 350px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 0 6px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 0 6px rgba(0,0,0,0.04);
+    -webkit-animation: myshow 0.2s;
+    -moz-animation: myshow 0.2s;
+    -o-animation: myshow 0.2s;
+    -ms-animation: myshow 0.2s;
+    animation: myshow 0.2s;
+  }
+div.my-message .my-message__group p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    padding-right: 10px;
+}
+div.my-message .my-message__group .my-message-close {
+    width: 15px;
+    height: 15px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…BhdGg+DQogICAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4=) no-repeat;
+    -webkit-background-size: 15px 15px;
+    -moz-background-size: 15px 15px;
+    background-size: 15px 15px;
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    cursor: pointer;
+    
+}
