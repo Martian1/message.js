@@ -23,8 +23,9 @@ var creatHtml = function() {
             return;
         }
         option.id = new Date().getTime();
+        option.id = 'msg' + option.id;
         node.id = option.id;
-        node.innerHTML = '<div class="my-message"><div class="message-cover"></div><div class="my-message__group"><p class="'+option.id+'-p">'
+        node.innerHTML = '<div class="my-message"><div class="message-cover"></div><div class="my-message__group"><p id="'+option.id+'-p">'
             + option.message
             + '</p><div class="my-message-close" id="'+option.id+'-close"></div></div></div>';
         document.body.appendChild(node);
